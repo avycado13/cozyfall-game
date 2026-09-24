@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://boabwpxt11ape"]
+
+[ext_resource type="Texture2D" uid="uid://c2hi2bij6wyxl" path="res://root.png" id="1_pq8q7"]
+
+[sub_resource type="Curve" id="Curve_pyidc"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5111956), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Line2D" type="Line2D" unique_id=415793403]
+texture_filter = 1
+texture_repeat = 2
+points = PackedVector2Array(-12, -138, -17, -78, -20, -24, -54, 38, -101, 81)
+width = 32.0
+width_curve = SubResource("Curve_pyidc")
+texture = ExtResource("1_pq8q7")
+texture_mode = 1
+joint_mode = 2
