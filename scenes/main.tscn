@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bavja34jmfnk7"]
+
+[ext_resource type="PackedScene" uid="uid://bj4a76wl6nsp8" path="res://scenes/branch.tscn" id="1_j5px3"]
+
+[node name="root" type="Node2D" unique_id=1779071880]
+
+[node name="meow" parent="." unique_id=783635948 instance=ExtResource("1_j5px3")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1316004996]
+zoom = Vector2(4, 4)
