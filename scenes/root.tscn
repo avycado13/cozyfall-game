@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://boabwpxt11ape"]
 
-[ext_resource type="Texture2D" uid="uid://c2hi2bij6wyxl" path="res://root.png" id="1_pq8q7"]
+[ext_resource type="Texture2D" uid="uid://dxf2lnlehen4g" path="res://assets/root.png" id="1_pq8q7"]
 
 [sub_resource type="Curve" id="Curve_pyidc"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5111956), 0.0, 0.0, 0, 0]
