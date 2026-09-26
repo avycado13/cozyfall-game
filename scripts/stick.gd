@@ -2,7 +2,7 @@ extends Area2D
 
 var placed = false
 var root1 = load("res://assets/roots/roots1.png")
-var root2 = load("res://assets/roots/roots2.png")
+var root2 = load("res://assets/roots/roots3.png")
 var root3 = load("res://assets/roots/roots3.png")
 var random_texture = 0
 var joint_pos = Vector2(0,0)
