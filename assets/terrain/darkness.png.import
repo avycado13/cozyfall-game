@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxf2lnlehen4g"
-path="res://.godot/imported/root.png-bb56a80cb55ce1ef623c3582d8479f40.ctex"
+uid="uid://f1x565nk5pht"
+path="res://.godot/imported/darkness.png-f881fb508ec8b3078ed9512f986b014a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/root.png"
-dest_files=["res://.godot/imported/root.png-bb56a80cb55ce1ef623c3582d8479f40.ctex"]
+source_file="res://assets/terrain/darkness.png"
+dest_files=["res://.godot/imported/darkness.png-f881fb508ec8b3078ed9512f986b014a.ctex"]
 
 [params]
 

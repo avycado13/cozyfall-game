@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-var max_speed = 200
-var acceleration = 100
+var max_speed = 500
+var acceleration = 500
 
 @onready var Camera = $Camera
 func _process(delta: float) -> void:
@@ -15,6 +15,6 @@ func _physics_process(delta: float) -> void:
 	if direction!=Vector2.ZERO:
 		velocity=velocity.move_toward(target_velocity,acceleration*delta)
 	else:
-		velocity=velocity.move_toward(target_velocity,acceleration*delta)
+		velocity=velocity.move_toward(Vector2(0,0),acceleration*10*delta)
 #move and slide
 	move_and_slide()

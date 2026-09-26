@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://d3sdcqk2k3yvw"]
+
+[ext_resource type="Script" uid="uid://dvwxbqe6w573b" path="res://scripts/pause_screen.gd" id="1_gchx3"]
+[ext_resource type="PackedScene" uid="uid://cyi7q8bcigdam" path="res://scenes/wood_button.tscn" id="2_qeunj"]
+
+[node name="PauseScreen" type="CanvasLayer" unique_id=1946667866]
+process_mode = 3
+process_priority = 2
+follow_viewport_enabled = true
+script = ExtResource("1_gchx3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1202576731]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.75
+offset_top = -134.0
+offset_right = 179.75
+offset_bottom = 134.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Resume" parent="VBoxContainer" unique_id=912590772 instance=ExtResource("2_qeunj")]
+layout_mode = 2
+text = "Resume"
+
+[node name="Save and Quit" parent="VBoxContainer" unique_id=1582824296 instance=ExtResource("2_qeunj")]
+layout_mode = 2
+text = "Save and Quit"

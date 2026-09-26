@@ -1,0 +1,225 @@
+[gd_scene format=3 uid="uid://b116uq0vrrjg"]
+
+[ext_resource type="Script" uid="uid://3loih3yim44t" path="res://scripts/tree.gd" id="1_viusy"]
+[ext_resource type="Texture2D" uid="uid://cvumelnliqmgc" path="res://assets/tree/tree.png" id="2_qd6xs"]
+[ext_resource type="Texture2D" uid="uid://unpa6aidjoqs" path="res://assets/tree/leaf.png" id="3_ake3r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18mvg"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(0, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmmp0"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(96, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m26wl"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(192, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yujg"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(288, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7adx"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(384, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xprpn"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(480, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bmcu"]
+atlas = ExtResource("2_qd6xs")
+region = Rect2(576, 0, 96, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u14ej"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18mvg")
+}],
+"loop": 1,
+"name": &"stage1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmmp0")
+}],
+"loop": 1,
+"name": &"stage2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m26wl")
+}],
+"loop": 1,
+"name": &"stage3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yujg")
+}],
+"loop": 1,
+"name": &"stage4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7adx")
+}],
+"loop": 1,
+"name": &"stage5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xprpn")
+}],
+"loop": 1,
+"name": &"stage6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bmcu")
+}],
+"loop": 1,
+"name": &"stage7",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_528u0"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(0, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0l3a"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(96, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70dru"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(192, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l31us"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(288, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_223ge"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(384, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtdfa"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(480, 0, 96, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyqri"]
+atlas = ExtResource("3_ake3r")
+region = Rect2(576, 0, 96, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uqtu4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_528u0")
+}],
+"loop": 1,
+"name": &"stage1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0l3a")
+}],
+"loop": 1,
+"name": &"stage2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70dru")
+}],
+"loop": 1,
+"name": &"stage3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l31us")
+}],
+"loop": 1,
+"name": &"stage4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_223ge")
+}],
+"loop": 1,
+"name": &"stage5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtdfa")
+}],
+"loop": 1,
+"name": &"stage6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyqri")
+}],
+"loop": 1,
+"name": &"stage7",
+"speed": 5.0
+}]
+
+[node name="Tree" type="CharacterBody2D" unique_id=706872884]
+script = ExtResource("1_viusy")
+
+[node name="Trunk" type="AnimatedSprite2D" parent="." unique_id=553985000]
+sprite_frames = SubResource("SpriteFrames_u14ej")
+animation = &"stage7"
+
+[node name="Leafs" type="AnimatedSprite2D" parent="." unique_id=1920056840]
+sprite_frames = SubResource("SpriteFrames_uqtu4")
+animation = &"stage7"
+
+[node name="Stage1" type="CollisionPolygon2D" parent="." unique_id=796082987]
+visible = false
+polygon = PackedVector2Array(6, 2, 3, 2, 3, 1, 0, 1, 0, 2, -3, 2, -3, 0, -2, 0, -2, -1, -1, -1, -1, -3, 0, -3, 0, -6, -1, -6, -1, -10, -2, -10, -2, -11, -3, -11, -3, -12, -4, -12, -4, -13, -6, -13, -6, -14, 6, -14, 6, -13, 4, -13, 4, -11, 3, -11, 3, -10, 2, -10, 2, -6, 3, -6, 3, -1, 4, -1, 4, 0, 5, 0, 5, 1, 6, 1)
+disabled = true
+
+[node name="Stage2" type="CollisionPolygon2D" parent="." unique_id=1184284344]
+visible = false
+polygon = PackedVector2Array(0, 2, -3, 2, -3, 0, -2, 0, -2, -2, -1, -2, -1, -4, 0, -4, 0, -9, -1, -9, -1, -13, -1, -13, -1, -14, -2, -14, -2, -15, -3, -15, -3, -16, -4, -16, -4, -17, -6, -17, -6, -18, 4, -18, 4, -17, 3, -17, 3, -16, 2, -16, 2, -9, 3, -9, 3, -2, 3, -1, 4, -1, 4, 0, 5, 0, 5, 1, 6, 1, 6, 2, 3, 2, 3, 1, 2, 1, 2, 0, 1, 0, 1, 1, 0, 1)
+disabled = true
+
+[node name="Stage3" type="CollisionPolygon2D" parent="." unique_id=824277492]
+visible = false
+polygon = PackedVector2Array(1, -1, -1, -1, -1, 1, -2, 1, -2, 2, -7, 2, -7, 0, -6, 0, -6, -1, -5, -1, -5, -5, -4, -5, -4, -6, -3, -6, -3, -7, -1, -7, -1, -12, -2, -12, -2, -15, -3, -15, -3, -18, -4, -18, -4, -20, -5, -20, -5, -22, -6, -22, -6, -23, -8, -23, -8, -24, -10, -24, -10, -25, 7, -25, 7, -24, 6, -24, 6, -23, 5, -23, 5, -21, 5, -21, 4, -21, 4, -20, 3, -20, 3, -18, 2, -18, 2, -14, 3, -14, 3, -4, 4, -4, 4, -3, 5, -3, 5, -2, 6, -2, 6, -1, 7, -1, 7, 0, 8, 0, 8, 1, 9, 1, 9, 2, 3, 2, 3, 1, 2, 1, 2, 0, 1, 0)
+disabled = true
+
+[node name="Stage4" type="CollisionPolygon2D" parent="." unique_id=1184537617]
+visible = false
+polygon = PackedVector2Array(1, -5, -1, -5, -1, -4, -2, -4, -2, -2, -3, -2, -3, -1, -4, -1, -4, 0, -5, 0, -5, 1, -6, 1, -6, 2, -12, 2, -12, 1, -11, 1, -11, -1, -10, -1, -10, -2, -8, -2, -8, -3, -7, -3, -7, -6, -6, -6, -6, -9, -5, -9, -5, -10, -3, -10, -3, -13, -2, -13, -2, -17, -3, -17, -3, -22, -4, -22, -4, -24, -5, -24, -5, -26, -6, -26, -6, -27, -8, -27, -8, -28, -9, -28, -9, -29, -10, -29, -10, -31, 9, -31, 9, -30, 8, -30, 8, -29, 7, -29, 7, -28, 6, -28, 6, -26, 5, -26, 5, -22, 4, -22, 4, -15, 5, -15, 5, -8, 7, -8, 7, -7, 8, -7, 8, -6, 9, -6, 9, -4, 11, -4, 11, -3, 12, -3, 12, -2, 13, -2, 13, 1, 14, 1, 14, 2, 10, 2, 10, 1, 9, 1, 9, 0, 6, 0, 6, -1, 4, -1, 4, -2, 3, -2, 3, -3, 2, -3, 2, -4, 1, -4)
+disabled = true
+
+[node name="Stage5" type="CollisionPolygon2D" parent="." unique_id=466613878]
+visible = false
+polygon = PackedVector2Array(2, -5, 1, -5, 1, -4, -2, -4, -2, -2, -3, -2, -3, -1, -4, -1, -4, 0, -5, 0, -5, 1, -6, 1, -6, 3, -8, 3, -8, 4, -15, 4, -15, 1, -14, 1, -14, 0, -13, 0, -13, -1, -11, -1, -11, -3, -10, -3, -10, -4, -9, -4, -9, -6, -10, -6, -10, -10, -9, -10, -9, -11, -8, -11, -8, -12, -7, -12, -6, -12, -6, -13, -5, -13, -5, -24, -6, -24, -6, -25, -7, -25, -7, -26, -7, -27, -8, -27, -8, -28, -10, -28, -10, -29, -11, -29, -11, -31, -12, -31, -12, -32, 10, -32, 10, -32, 10, -31, 9, -31, 9, -28, 9, -28, 8, -28, 8, -26, 7, -26, 7, -25, 7, -22, 6, -22, 6, -19, 7, -19, 7, -13, 8, -13, 8, -12, 9, -12, 9, -10, 10, -10, 10, -9, 11, -9, 11, -8, 12, -8, 12, -6, 13, -6, 13, -5, 14, -5, 14, -2, 16, -2, 16, -1, 17, -1, 17, 0, 18, 0, 18, 2, 19, 2, 19, 4, 15, 4, 15, 3, 14, 3, 14, 2, 12, 2, 12, 1, 11, 1, 11, 0, 8, 0, 8, -1, 6, -1, 6, -2, 4, -2, 4, -3, 3, -3, 3, -4, 2, -4)
+disabled = true
+
+[node name="Stage6" type="CollisionPolygon2D" parent="." unique_id=2058639853]
+visible = false
+polygon = PackedVector2Array(0, -4, -1, -4, -1, -3, -2, -3, -2, -2, -3, -2, -3, -1, -3, 0, -4, 0, -4, 1, -5, 1, -5, 2, -6, 2, -6, 3, -8, 3, -8, 4, -17, 4, -17, 1, -16, 1, -16, 0, -14, 0, -14, -1, -13, -1, -13, -2, -12, -2, -12, -3, -11, -3, -11, -6, -12, -6, -12, -9, -11, -9, -11, -10, -10, -10, -10, -11, -9, -11, -9, -11, -9, -12, -8, -12, -8, -15, -7, -15, -7, -22, -8, -22, -8, -26, -10, -26, -10, -27, -11, -27, -11, -28, -12, -28, -12, -29, -13, -29, -13, -30, -14, -30, -14, -31, -15, -31, -15, -32, -16, -32, -16, -33, -17, -33, -17, -34, -18, -34, 16, -34, 16, -33, 15, -33, 15, -31, 14, -31, 14, -30, 13, -30, 13, -29, 11, -29, 11, -24, 10, -24, 10, -15, 11, -15, 11, -12, 12, -12, 12, -11, 13, -11, 13, -10, 14, -10, 14, -7, 13, -7, 13, -6, 14, -6, 14, -4, 15, -4, 15, -2, 16, -2, 16, -1, 17, -1, 17, 0, 18, 0, 18, 1, 20, 1, 20, 4, 14, 4, 14, 3, 13, 3, 12, 3, 12, 2, 9, 2, 9, 1, 8, 1, 8, 0, 4, 0, 4, -1, 3, -1, 3, -2, 1, -2, 1, -3, 0, -3)
+disabled = true
+
+[node name="Stage7" type="CollisionPolygon2D" parent="." unique_id=733285976]
+visible = false
+polygon = PackedVector2Array(1, -5, -1, -5, -1, -3, -2, -3, -2, -2, -3, -2, -3, -1, -4, -1, -4, 0, -5, 0, -5, 1, -7, 1, -7, 2, -8, 2, -8, 3, -10, 3, -10, 4, -19, 4, -19, 1, -18, 1, -18, 0, -17, 0, -16, 0, -16, -1, -15, -1, -15, -2, -14, -2, -14, -3, -13, -3, -13, -6, -14, -6, -14, -9, -13, -9, -13, -10, -12, -10, -12, -11, -11, -11, -11, -12, -10, -12, -10, -15, -9, -15, -9, -24, -10, -24, -10, -28, -12, -28, -12, -29, -13, -29, -13, -30, -14, -30, -14, -31, -15, -31, -15, -32, -16, -32, -16, -33, -17, -33, -17, -34, -18, -34, -18, -35, 18, -35, 18, -33, 17, -33, 17, -32, 16, -32, 16, -32, 16, -31, 14, -31, 14, -28, 13, -28, 13, -26, 12, -26, 12, -21, 11, -21, 11, -19, 12, -19, 12, -15, 13, -15, 13, -13, 14, -13, 14, -12, 15, -12, 15, -11, 16, -11, 16, -10, 17, -10, 17, -7, 16, -7, 16, -6, 17, -6, 17, -4, 18, -4, 18, -2, 19, -2, 19, -1, 20, -1, 20, 0, 21, 0, 21, 1, 23, 1, 23, 4, 17, 4, 17, 3, 15, 3, 15, 2, 11, 2, 11, 1, 10, 1, 10, 0, 6, 0, 6, -1, 5, -1, 5, -2, 3, -2, 3, -3, 2, -3, 2, -4, 1, -4)
+disabled = true

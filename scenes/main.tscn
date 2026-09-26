@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://bj4a76wl6nsp8" path="res://scenes/branch.tscn" id="1_j5px3"]
 [ext_resource type="PackedScene" uid="uid://cxyi8oo0eas1i" path="res://scenes/ground.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://d3jisgvbyl820" path="res://scenes/camera_man.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://d3sdcqk2k3yvw" path="res://scenes/pause_screen.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://b116uq0vrrjg" path="res://scenes/tree.tscn" id="5_tbgi4"]
 
 [node name="root" type="Node2D" unique_id=1779071880]
 
@@ -12,3 +14,10 @@ z_index = 7
 [node name="Camera Man" parent="." unique_id=142650103 instance=ExtResource("3_sugp2")]
 
 [node name="Ground" parent="." unique_id=1820954101 instance=ExtResource("2_0wfyh")]
+scroll_offset = Vector2(0, 47)
+
+[node name="PauseScreen" parent="." unique_id=1946667866 instance=ExtResource("4_jyhfs")]
+layer = 7
+follow_viewport_enabled = false
+
+[node name="Tree" parent="." unique_id=706872884 instance=ExtResource("5_tbgi4")]

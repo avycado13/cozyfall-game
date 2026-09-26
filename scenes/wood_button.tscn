@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cyi7q8bcigdam"]
+
+[ext_resource type="FontFile" uid="uid://b20yjfu7l7uet" path="res://assets/UI/aseprite.ttf" id="1_lifox"]
+[ext_resource type="Texture2D" uid="uid://c7j0aowvrg6r5" path="res://assets/UI/shop_UI.png" id="2_6sfmj"]
+[ext_resource type="Texture2D" uid="uid://bcsq1drsdmxr4" path="res://assets/UI/shop_UI_click.png" id="3_lifox"]
+[ext_resource type="Texture2D" uid="uid://ml0l58013q54" path="res://assets/UI/shop_UI_select.png" id="3_web8v"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hqqx"]
+texture = ExtResource("2_6sfmj")
+texture_margin_left = 24.0
+texture_margin_top = 44.0
+texture_margin_right = 24.0
+texture_margin_bottom = 48.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oo3ss"]
+texture = ExtResource("3_lifox")
+texture_margin_left = 28.0
+texture_margin_top = 48.0
+texture_margin_right = 28.0
+texture_margin_bottom = 52.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lifox"]
+texture = ExtResource("3_web8v")
+texture_margin_left = 26.0
+texture_margin_top = 46.0
+texture_margin_right = 26.0
+texture_margin_bottom = 50.0
+
+[node name="WoodButton" type="Button" unique_id=912590772]
+offset_right = 131.0
+offset_bottom = 124.0
+scale = Vector2(1.0017416, 1.0016468)
+theme_override_colors/font_color = Color(0.13725491, 0.1254902, 0.20392157, 1)
+theme_override_colors/font_pressed_color = Color(0.14117648, 0.1254902, 0.20392157, 1)
+theme_override_fonts/font = ExtResource("1_lifox")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_6hqqx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_oo3ss")
+theme_override_styles/hover = SubResource("StyleBoxTexture_lifox")
+text = "hi"
