@@ -10,6 +10,7 @@
 
 [node name="meow" parent="." unique_id=783635948 instance=ExtResource("1_j5px3")]
 z_index = 7
+position = Vector2(2, 65)
 
 [node name="Camera Man" parent="." unique_id=142650103 instance=ExtResource("3_sugp2")]
 

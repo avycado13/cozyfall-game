@@ -5,7 +5,12 @@ var acceleration = 500
 
 @onready var Camera = $Camera
 func _process(delta: float) -> void:
-	pass
+	if self.position.y <-50:
+		self.position.y = -50
+	if self.position.x <-150:
+		self.position.x = -150
+	if self.position.x > 150:
+		self.position.x = 150
 
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.

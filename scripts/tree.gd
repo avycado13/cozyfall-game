@@ -4,7 +4,7 @@ var Stage = 1
 
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("right_click"):
 		Stage +=1
 	match Stage:
 		1:
