@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://debqdomvles3v"]
 
 [ext_resource type="Texture2D" uid="uid://deh6k0d1wf7ol" path="res://assets/aseprite files/root.png" id="1_i3vek"]
+[ext_resource type="Script" uid="uid://d1vdti36cv5jg" path="res://scenes/stick.gd" id="1_ld7er"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tq6n8"]
 size = Vector2(2, 18)
 
 [node name="stick" type="Area2D" unique_id=1425055387]
+script = ExtResource("1_ld7er")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=537615371]
 position = Vector2(0, 8)

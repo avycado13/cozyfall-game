@@ -1,7 +1,7 @@
 extends Parallax2D
 
 func _ready() -> void:
-	print($"../Camera Man".Camera.zoom)
+	#print($"../Camera Man".Camera.zoom)
 	var viewport_size := get_viewport_rect().size
 	var viewport_height := viewport_size.y / 1
 	var viewport_width := viewport_size.x / 1
