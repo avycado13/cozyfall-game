@@ -18,9 +18,9 @@ func _process(delta: float) -> void:
 		current_pos -= Vector2(sin(instance.rotation),-cos(instance.rotation)) * 16
 		instance.modulate.a = 1
 		init_stick()
-	elif Input.is_action_just_pressed("rotate_left"):
+	elif Input.is_action_just_pressed("rotate_left") and rad_to_deg(instance.rotation ) < 50:
 		instance.rotation += deg_to_rad(30)
-	elif Input.is_action_just_pressed("rotate_right"):
+	elif Input.is_action_just_pressed("rotate_right") and rad_to_deg(instance.rotation ) > -50:
 		instance.rotation -= deg_to_rad(30)
 		
 	

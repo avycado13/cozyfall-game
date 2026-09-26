@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://gcmvir6nn7bg"]
+
+[ext_resource type="Texture2D" uid="uid://bs6lpai2aseyc" path="res://assets/minerals.png" id="1_k5xk4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhfa5"]
+texture = ExtResource("1_k5xk4")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_4itki"]
+sources/1 = SubResource("TileSetAtlasSource_qhfa5")
+
+[node name="Minerals" type="TileMapLayer" unique_id=1721827952]
+tile_set = SubResource("TileSet_4itki")

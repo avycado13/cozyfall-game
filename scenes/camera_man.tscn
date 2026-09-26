@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://d3jisgvbyl820"]
 
 [ext_resource type="Script" uid="uid://cijpnfdv7mljl" path="res://scripts/camera_man.gd" id="1_av3pn"]
-[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_4d3j1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4itki"]
 
@@ -13,9 +12,7 @@ shape = SubResource("CircleShape2D_4itki")
 disabled = true
 
 [node name="Camera" type="Camera2D" parent="." unique_id=677112602]
+zoom = Vector2(3, 3)
 limit_enabled = false
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=95434849]
-texture = ExtResource("2_4d3j1")

@@ -1,20 +1,14 @@
 extends Parallax2D
 
-
-
 func _ready() -> void:
-	var camera_position = $"../../Camera Man".Camera_position
-	if camera == null:
-		push_warning("Please assign a Camera2D to the Parallax2D node!")
-		return
-
+	print($"../Camera Man".Camera.zoom)
 	var viewport_size := get_viewport_rect().size
-	var viewport_height := viewport_size.y / camera.zoom.y
-	var viewport_width := viewport_size.x / camera.zoom.x
+	var viewport_height := viewport_size.y / 1
+	var viewport_width := viewport_size.x / 1
 
 	# Position the Parallax2D at the bottom quarter of the camera view.
 	global_position.y = (
-		camera.global_position.y
+		$"../Camera Man".Camera.global_position.y
 		+ viewport_height / 2.0
 		- viewport_height / 4.0
 	)

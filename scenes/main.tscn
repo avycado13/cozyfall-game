@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bavja34jmfnk7"]
 
 [ext_resource type="PackedScene" uid="uid://bj4a76wl6nsp8" path="res://scenes/branch.tscn" id="1_j5px3"]
-[ext_resource type="PackedScene" uid="uid://bhss2rc30pepk" path="res://scenes/ground.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://cxyi8oo0eas1i" path="res://scenes/ground.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://d3jisgvbyl820" path="res://scenes/camera_man.tscn" id="3_sugp2"]
 
 [node name="root" type="Node2D" unique_id=1779071880]
@@ -9,6 +9,6 @@
 [node name="meow" parent="." unique_id=783635948 instance=ExtResource("1_j5px3")]
 z_index = 7
 
-[node name="Ground" parent="." unique_id=2071370031 instance=ExtResource("2_0wfyh")]
-
 [node name="Camera Man" parent="." unique_id=142650103 instance=ExtResource("3_sugp2")]
+
+[node name="Ground" parent="." unique_id=1820954101 instance=ExtResource("2_0wfyh")]

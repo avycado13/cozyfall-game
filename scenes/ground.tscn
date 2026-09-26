@@ -1,40 +1,24 @@
-[gd_scene format=3 uid="uid://bhss2rc30pepk"]
+[gd_scene format=3 uid="uid://cxyi8oo0eas1i"]
 
-[ext_resource type="Texture2D" uid="uid://bs6lpai2aseyc" path="res://assets/minerals.png" id="1_1ywih"]
-[ext_resource type="Script" uid="uid://bwstyysmuwero" path="res://scripts/dirt_bg.gd" id="2_ct7o8"]
+[ext_resource type="Script" uid="uid://bwstyysmuwero" path="res://scripts/ground.gd" id="2_ct7o8"]
 [ext_resource type="Texture2D" uid="uid://cgxsrwouioe1o" path="res://assets/stones.png" id="3_vjnaj"]
 [ext_resource type="Texture2D" uid="uid://f1x565nk5pht" path="res://assets/darkness.png" id="4_hokwi"]
 [ext_resource type="Texture2D" uid="uid://cty6wwppgxi2" path="res://assets/grass.png" id="5_6ra5r"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhfa5"]
-texture = ExtResource("1_1ywih")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_4itki"]
-sources/1 = SubResource("TileSetAtlasSource_qhfa5")
-
-[node name="Ground" type="Node" unique_id=2071370031]
-
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1335299417]
-tile_set = SubResource("TileSet_4itki")
-
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=761306451]
+[node name="Ground" type="Parallax2D" unique_id=1820954101]
 z_index = -10
 repeat_size = Vector2(128, 0)
 repeat_times = 5
 script = ExtResource("2_ct7o8")
 
-[node name="Dirt" type="Sprite2D" parent="Parallax2D" unique_id=1287424320]
+[node name="Dirt" type="Sprite2D" parent="." unique_id=208685507]
 z_index = -2
 texture = ExtResource("3_vjnaj")
 
-[node name="Darkness" type="Sprite2D" parent="Parallax2D" unique_id=1341649452]
+[node name="Darkness" type="Sprite2D" parent="." unique_id=844759301]
 z_index = 4
 texture = ExtResource("4_hokwi")
 
-[node name="Grass" type="Sprite2D" parent="Parallax2D" unique_id=353815110]
+[node name="Grass" type="Sprite2D" parent="." unique_id=1730244274]
 z_index = 5
 texture = ExtResource("5_6ra5r")
