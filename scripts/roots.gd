@@ -13,12 +13,14 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	instance.position = stick_joint_pos
-	if $stick.joint_pos != null:
-		stick_joint_pos = $stick.joint_pos
-	else:
-		stick_joint_pos = current_pos
-	#print(rad_to_deg(instance.rotation ))
+	
+	#current_pos = $stick.current_pos
+	instance.position = current_pos
+	#if $stick.joint_pos != null:
+		#stick_joint_pos = $stick.joint_pos
+	#else:
+		#stick_joint_pos = current_pos
+	##print(rad_to_deg(instance.rotation ))
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		current_pos -= Vector2(sin(instance.rotation),-cos(instance.rotation)) * 16
@@ -33,7 +35,7 @@ func _process(delta: float) -> void:
 	
 func init_stick():
 	instance = branch.instantiate()
-	instance.position = stick_joint_pos
+	instance.position = current_pos
 	instance.rotation = deg_to_rad(15)
 	instance.modulate.a = 0.5
 	add_child(instance)

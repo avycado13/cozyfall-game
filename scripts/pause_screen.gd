@@ -3,6 +3,7 @@ var button_wait = .2
 var paused = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	self.visible = false
 	#$VBoxContainer.scale = Vector2(0,0)
 
