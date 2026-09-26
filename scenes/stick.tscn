@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://deh6k0d1wf7ol" path="res://assets/aseprite files/root.png" id="1_i3vek"]
 [ext_resource type="Script" uid="uid://d1vdti36cv5jg" path="res://scripts/stick.gd" id="1_ld7er"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="3_m8wbh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tq6n8"]
 size = Vector2(2, 18)
@@ -34,3 +35,8 @@ shape = SubResource("CircleShape2D_u14ej")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=706102707]
 position = Vector2(0, 18)
+
+[node name="Sprite2D" type="Sprite2D" parent="Marker2D" unique_id=1104646436]
+position = Vector2(-2, 7)
+scale = Vector2(0.0703125, 0.0703125)
+texture = ExtResource("3_m8wbh")

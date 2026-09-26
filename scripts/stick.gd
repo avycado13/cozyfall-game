@@ -5,10 +5,9 @@ var root1 = load("res://assets/roots/roots1.png")
 var root2 = load("res://assets/roots/roots3.png")
 var root3 = load("res://assets/roots/roots3.png")
 var random_texture = 0
-var joint_pos = Vector2(0,0)
 var joint_found = false
 var current_pos = Vector2(0,0)
-
+var joint_pos = Vector2(0,0)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	current_pos -= Vector2(sin(self.rotation),-cos(self.rotation)) * 16
@@ -24,10 +23,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print(self.position)
+	print($Marker2D.global_position)
 	#joint_pos = $Joint.position
 	if placed == true and joint_found == false:
-		joint_pos = $Marker2D.position
+		joint_pos = $Marker2D.global_position
 		joint_found = true
 
 
