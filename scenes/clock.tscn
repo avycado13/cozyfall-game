@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cp5mfgoh4ae5i"]
+
+[ext_resource type="Script" uid="uid://dubyp1p1tp0fv" path="res://scripts/clock.gd" id="1_7dv1d"]
+[ext_resource type="Texture2D" uid="uid://wck27o563uew" path="res://assets/UI/clock_base.png" id="2_er1xc"]
+[ext_resource type="Texture2D" uid="uid://byisqwhg61eab" path="res://assets/UI/minute.png" id="3_r7ruc"]
+[ext_resource type="Texture2D" uid="uid://ca3upc5f2cmxg" path="res://assets/UI/hour.png" id="4_ma5gl"]
+
+[node name="Clock" type="Node2D" unique_id=229432186]
+script = ExtResource("1_7dv1d")
+
+[node name="clock_base" type="Sprite2D" parent="." unique_id=1417359655]
+z_index = -1
+texture = ExtResource("2_er1xc")
+
+[node name="minute" type="Sprite2D" parent="." unique_id=1056119534]
+texture = ExtResource("3_r7ruc")
+
+[node name="hour" type="Sprite2D" parent="." unique_id=853534113]
+z_index = 1
+texture = ExtResource("4_ma5gl")

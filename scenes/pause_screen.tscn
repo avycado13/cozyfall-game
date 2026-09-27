@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d3sdcqk2k3yvw"]
 
-[ext_resource type="Script" uid="uid://dvwxbqe6w573b" path="res://scripts/pause_screen.gd" id="1_gchx3"]
+[ext_resource type="Script" uid="uid://bs64dqcqvl7u7" path="res://scripts/pause_screen.gd" id="1_gchx3"]
 [ext_resource type="PackedScene" uid="uid://cyi7q8bcigdam" path="res://scenes/wood_button.tscn" id="2_qeunj"]
 
 [node name="PauseScreen" type="CanvasLayer" unique_id=1946667866]
