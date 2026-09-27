@@ -2,6 +2,9 @@ extends CharacterBody2D
 
 var health = 100
 var Stage = 1
+var iron = 0
+var water = 0
+var potassium = 0
 
 
 func _process(delta: float) -> void:
