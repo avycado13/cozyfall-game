@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d3jisgvbyl820" path="res://scenes/camera_man.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://d3sdcqk2k3yvw" path="res://scenes/pause_screen.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://b116uq0vrrjg" path="res://scenes/tree.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://gcmvir6nn7bg" path="res://scenes/minerals.tscn" id="6_minerals"]
 
 [node name="root" type="Node2D" unique_id=1779071880]
 
@@ -24,5 +25,7 @@ position = Vector2(2, 65)
 
 [node name="Ground" parent="." unique_id=1820954101 instance=ExtResource("2_0wfyh")]
 scroll_offset = Vector2(0, 47)
+
+[node name="Minerals" parent="." instance=ExtResource("6_minerals")]
 
 [node name="Tree" parent="." unique_id=706872884 instance=ExtResource("5_tbgi4")]
