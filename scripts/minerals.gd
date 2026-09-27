@@ -1,6 +1,6 @@
 extends Node2D
 
-const MINERAL_TEXTURE = preload("res://assets/terrain/minerals.png")
+const MINERAL_TEXTURE = preload("res://assets/terrain/ores.png")
 const MINERAL_TYPES: Array[StringName] = [&"red", &"purple", &"blue", &"white"]
 const MINERAL_SIZE := Vector2(16, 16)
 
