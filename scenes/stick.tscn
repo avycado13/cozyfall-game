@@ -8,7 +8,7 @@
 size = Vector2(2, 18)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u14ej"]
-radius = 12.0
+radius = 8.0
 
 [node name="stick" type="Area2D" unique_id=1425055387]
 script = ExtResource("1_ld7er")
@@ -30,7 +30,7 @@ texture = ExtResource("1_i3vek")
 position = Vector2(-1, 21)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Joint" unique_id=1314274616]
-position = Vector2(0, -2)
+position = Vector2(1, -3)
 shape = SubResource("CircleShape2D_u14ej")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=706102707]
