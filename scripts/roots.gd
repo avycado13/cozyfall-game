@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 	##print(rad_to_deg(instance.rotation ))
 	
 	if Input.is_action_just_pressed("ui_accept"):
-		#current_pos -= Vector2(sin(instance.rotation),-cos(instance.rotation)) * 16
+		current_pos -= Vector2(sin(instance.rotation),-cos(instance.rotation)) * 16
 		instance.modulate.a = 1
 		init_stick()
 		$stick.placed = true

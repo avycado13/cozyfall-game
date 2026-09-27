@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://deh6k0d1wf7ol" path="res://assets/aseprite files/root.png" id="1_i3vek"]
 [ext_resource type="Script" uid="uid://d1vdti36cv5jg" path="res://scripts/stick.gd" id="1_ld7er"]
+[ext_resource type="Texture2D" uid="uid://o4jmy6rph1jk" path="res://assets/roots/roots_end.png" id="3_m8wbh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tq6n8"]
 size = Vector2(2, 18)
@@ -34,3 +35,12 @@ shape = SubResource("CircleShape2D_u14ej")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=706102707]
 position = Vector2(0, 18)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=444533955]
+offset_left = 10.0
+offset_top = 19.0
+offset_right = 50.0
+offset_bottom = 59.0
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_m8wbh")
