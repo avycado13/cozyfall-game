@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jihpeg4y8r4w"
-path="res://.godot/imported/ore_icons3.png-80ef9321a3a88bd59d532fb08cccea19.ctex"
+uid="uid://dc6yqwawb05pi"
+path="res://.godot/imported/water.png-58c8471d5298af8dfc4c5d8f049257f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/ore_icons3.png"
-dest_files=["res://.godot/imported/ore_icons3.png-80ef9321a3a88bd59d532fb08cccea19.ctex"]
+source_file="res://assets/UI/water.png"
+dest_files=["res://.godot/imported/water.png-58c8471d5298af8dfc4c5d8f049257f0.ctex"]
 
 [params]
 
