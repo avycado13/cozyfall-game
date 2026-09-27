@@ -1,7 +1,8 @@
 extends Node2D
 
 const MINERAL_TEXTURE = preload("res://assets/terrain/ores.png")
-const MINERAL_TYPES: Array[StringName] = [&"red", &"purple", &"blue", &"white"]
+# Sprite order in ores.png: red iron, pale potassium, blue water.
+const MINERAL_TYPES: Array[StringName] = [&"iron", &"potassium", &"water"]
 const MINERAL_SIZE := Vector2(16, 16)
 
 @export var spawn_count := 8
@@ -9,10 +10,9 @@ const MINERAL_SIZE := Vector2(16, 16)
 @export var spawn_spacing := Vector2i(24, 24)
 
 var mineral_counts := {
-	&"red": 0,
-	&"purple": 0,
-	&"blue": 0,
-	&"white": 0,
+	&"iron": 0,
+	&"potassium": 0,
+	&"water": 0,
 }
 
 var _random := RandomNumberGenerator.new()
@@ -32,6 +32,16 @@ func spawn_minerals() -> void:
 		var mineral_position: Vector2 = available_positions.pop_at(position_index)
 		var mineral_type_index := _random.randi_range(0, MINERAL_TYPES.size() - 1)
 		_create_mineral(mineral_type_index, mineral_position)
+
+
+func _physics_process(_delta: float) -> void:
+	# area_entered fires before a new root is placed if it overlaps an ore.
+	# Check existing overlaps as well so placing that root still collects it.
+	for mineral in get_children():
+		if mineral.get_meta("collected", false):
+			continue
+		for area in mineral.get_overlapping_areas():
+			_on_mineral_area_entered(area, mineral)
 
 
 func _get_spawn_positions() -> Array[Vector2]:
@@ -86,5 +96,13 @@ func _on_mineral_area_entered(root: Area2D, mineral: Area2D) -> void:
 	mineral.set_deferred("monitoring", false)
 	var mineral_type: StringName = mineral.get_meta("mineral_type")
 	mineral_counts[mineral_type] += 1
-	print("Minerals collected: ", mineral_counts)
+	var tree := get_node_or_null("../Tree")
+	if tree != null:
+		match mineral_type:
+			&"iron":
+				tree.iron += 1
+			&"potassium":
+				tree.potassium += 1
+			&"water":
+				tree.water += 1
 	mineral.queue_free()

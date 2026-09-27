@@ -1,27 +1,7 @@
 [gd_scene format=3 uid="uid://gcmvir6nn7bg"]
 
-[ext_resource type="Texture2D" uid="uid://bs6lpai2aseyc" path="res://assets/terrain/minerals.png" id="1_k5xk4"]
 [ext_resource type="Script" uid="uid://cjqymwv52mjxq" path="res://scripts/minerals.gd" id="1_minerals"]
-[ext_resource type="Texture2D" uid="uid://de2wuda7mvjvn" path="res://assets/terrain/ores.png" id="1_sl060"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_plub8"]
-texture = ExtResource("1_sl060")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhfa5"]
-texture = ExtResource("1_k5xk4")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_4itki"]
-sources/1 = SubResource("TileSetAtlasSource_qhfa5")
-sources/0 = SubResource("TileSetAtlasSource_plub8")
-
-[node name="Minerals" type="TileMapLayer" unique_id=1721827952]
+[node name="Minerals" type="Node2D" unique_id=1721827952]
 z_index = 6
-tile_set = SubResource("TileSet_4itki")
 script = ExtResource("1_minerals")
