@@ -13,7 +13,8 @@ config_version=5
 config/name="cozyfall-game"
 run/main_scene="uid://bavja34jmfnk7"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://kbxticiyycab"
+config/macos_native_icon="res://icon.icns"
 
 [display]
 
