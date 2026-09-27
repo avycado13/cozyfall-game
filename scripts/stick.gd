@@ -23,7 +23,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print($Marker2D.global_position)
+	#print($Marker2D.global_position)
 	#joint_pos = $Joint.position
 	if placed == true and joint_found == false:
 		joint_pos = $Marker2D.global_position
