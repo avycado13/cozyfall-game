@@ -8,11 +8,13 @@ var random_texture = 0
 var joint_found = false
 var current_pos = Vector2(0,0)
 var joint_pos = Vector2(0,0)
+@onready var joint: Area2D = $Joint
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	add_to_group("root_segment")
 	current_pos -= Vector2(sin(self.rotation),-cos(self.rotation)) * 16
-	$Joint.input_event.connect(_on_input_event)
+	
 	random_texture = int(randf_range(1,4))
 	match random_texture:
 		1:
@@ -31,10 +33,14 @@ func _process(delta: float) -> void:
 		joint_found = true
 
 
-func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int):
+	
+
+
+
+func _on_joint_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if Input.is_action_just_pressed("left_click") and placed == true:
 		#joint_pos = $Marker2D.position
-		$".".current_pos = joint_pos
-		print("clicked")
+		get_parent().current_pos = joint.global_position
+		get_parent().update_stick()
+		print(get_parent().current_pos)
 		
-	
