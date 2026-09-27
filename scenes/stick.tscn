@@ -18,13 +18,13 @@ position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_tq6n8")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1274936779]
-offset_left = 10.0
+offset_left = 8.0
 offset_top = -1.0
-offset_right = 50.0
+offset_right = 48.0
 offset_bottom = 39.0
 rotation = 1.5707964
-scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_i3vek")
+stretch_mode = 2
 
 [node name="Joint" type="Area2D" parent="." unique_id=1385644114]
 position = Vector2(0, 18)
@@ -36,12 +36,15 @@ shape = SubResource("CircleShape2D_u14ej")
 position = Vector2(0, 18)
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=444533955]
-offset_left = 10.0
-offset_top = 19.0
-offset_right = 50.0
-offset_bottom = 59.0
+offset_left = 8.0
+offset_top = 15.0
+offset_right = 48.0
+offset_bottom = 55.0
 rotation = 1.5707964
-scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_m8wbh")
+<<<<<<< HEAD
 
 [connection signal="input_event" from="Joint" to="." method="_on_joint_input_event"]
+=======
+stretch_mode = 2
+>>>>>>> 7678bd92497f24624a962f62459cf79aa3d9a232

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://clpk5d30866ju"]
 
+[ext_resource type="Script" uid="uid://doeh4it6jkn3g" path="res://scripts/ui.gd" id="1_8dubc"]
 [ext_resource type="PackedScene" uid="uid://cp5mfgoh4ae5i" path="res://scenes/clock.tscn" id="1_nt7q6"]
 [ext_resource type="Texture2D" uid="uid://dh6aii5uh7qey" path="res://assets/UI/iron.png" id="2_x4jx1"]
 [ext_resource type="FontFile" uid="uid://dkpmhd6gm81qw" path="res://assets/UI/Small Pixels.ttf" id="3_yev5y"]
@@ -7,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://jihpeg4y8r4w" path="res://assets/UI/potasium.png" id="5_8dubc"]
 
 [node name="UI" type="CanvasLayer" unique_id=1658365500]
+script = ExtResource("1_8dubc")
 
 [node name="Clock" parent="." unique_id=229432186 instance=ExtResource("1_nt7q6")]
 z_index = 10
@@ -55,12 +57,12 @@ theme_override_font_sizes/font_size = 4
 text = "Water:0
 "
 
-[node name="Potassiom" type="TextureRect" parent="VBoxContainer" unique_id=1872279242]
+[node name="Potassium" type="TextureRect" parent="VBoxContainer" unique_id=1872279242]
 layout_mode = 2
 texture = ExtResource("5_8dubc")
 stretch_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/Potassiom" unique_id=2073812129]
+[node name="Label" type="Label" parent="VBoxContainer/Potassium" unique_id=2073812129]
 layout_mode = 0
 offset_left = 17.666668
 offset_top = 6.4999943

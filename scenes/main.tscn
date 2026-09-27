@@ -26,6 +26,6 @@ position = Vector2(2, 65)
 [node name="Ground" parent="." unique_id=1820954101 instance=ExtResource("2_0wfyh")]
 scroll_offset = Vector2(0, 47)
 
-[node name="Minerals" parent="." instance=ExtResource("6_minerals")]
+[node name="Minerals" parent="." unique_id=1765579159 instance=ExtResource("6_minerals")]
 
 [node name="Tree" parent="." unique_id=706872884 instance=ExtResource("5_tbgi4")]
