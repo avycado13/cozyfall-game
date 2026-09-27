@@ -2,14 +2,16 @@
 
 [ext_resource type="Script" uid="uid://dubyp1p1tp0fv" path="res://scripts/clock.gd" id="1_7dv1d"]
 [ext_resource type="Texture2D" uid="uid://bnfgbcbyke4vs" path="res://assets/UI/clock1.png" id="2_7dv1d"]
+[ext_resource type="Texture2D" uid="uid://xdhjta8jwqv6" path="res://assets/UI/clock4.png" id="2_er1xc"]
 [ext_resource type="Texture2D" uid="uid://byisqwhg61eab" path="res://assets/UI/clock2.png" id="3_er1xc"]
 [ext_resource type="Texture2D" uid="uid://b7uaaqdnvqghd" path="res://assets/UI/clock3.png" id="4_r7ruc"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ma5gl"]
-load_path = "res://.godot/imported/center.png-a019ca4ab2e8f40390849a2c14a0fff0.ctex"
-
 [node name="Clock" type="Node2D" unique_id=229432186]
 script = ExtResource("1_7dv1d")
+
+[node name="center" type="Sprite2D" parent="." unique_id=22202735]
+z_index = 10
+texture = ExtResource("2_er1xc")
 
 [node name="clock_base" type="Sprite2D" parent="." unique_id=1417359655]
 z_index = -1
@@ -25,7 +27,3 @@ texture = ExtResource("4_r7ruc")
 [node name="Timer" type="Timer" parent="." unique_id=1421709029]
 wait_time = 0.25
 autostart = true
-
-[node name="center" type="Sprite2D" parent="." unique_id=22202735]
-z_index = 4
-texture = SubResource("CompressedTexture2D_ma5gl")

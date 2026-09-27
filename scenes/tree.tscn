@@ -3,6 +3,16 @@
 [ext_resource type="Script" uid="uid://3loih3yim44t" path="res://scripts/tree.gd" id="1_viusy"]
 [ext_resource type="Texture2D" uid="uid://cvumelnliqmgc" path="res://assets/tree/tree.png" id="2_qd6xs"]
 [ext_resource type="Texture2D" uid="uid://unpa6aidjoqs" path="res://assets/tree/leaf.png" id="3_ake3r"]
+[ext_resource type="Shader" uid="uid://dyjvvyanpv274" path="res://shaders/tree.gdshader" id="3_qd6xs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ake3r"]
+shader = ExtResource("3_qd6xs")
+shader_parameter/wind_start_threshold = 0.1
+shader_parameter/wind_end_threshold = 2.0
+shader_parameter/wind_end_threshold_2 = 0.1
+shader_parameter/wind_strength = 0.05
+shader_parameter/wind_speed = 1.0
+shader_parameter/scale = 1.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_18mvg"]
 atlas = ExtResource("2_qd6xs")
@@ -179,15 +189,18 @@ animations = [{
 }]
 
 [node name="Tree" type="CharacterBody2D" unique_id=706872884]
+material = SubResource("ShaderMaterial_ake3r")
 script = ExtResource("1_viusy")
 
 [node name="Trunk" type="AnimatedSprite2D" parent="." unique_id=553985000]
+use_parent_material = true
 sprite_frames = SubResource("SpriteFrames_u14ej")
-animation = &"stage7"
+animation = &"stage1"
 
 [node name="Leafs" type="AnimatedSprite2D" parent="." unique_id=1920056840]
+use_parent_material = true
 sprite_frames = SubResource("SpriteFrames_uqtu4")
-animation = &"stage7"
+animation = &"stage1"
 
 [node name="Stage1" type="CollisionPolygon2D" parent="." unique_id=796082987]
 visible = false
