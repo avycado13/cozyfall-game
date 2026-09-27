@@ -10,6 +10,7 @@ var current_pos = Vector2(0,0)
 var joint_pos = Vector2(0,0)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	add_to_group("root_segment")
 	current_pos -= Vector2(sin(self.rotation),-cos(self.rotation)) * 16
 	$Joint.input_event.connect(_on_input_event)
 	random_texture = int(randf_range(1,4))
