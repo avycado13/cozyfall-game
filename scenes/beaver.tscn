@@ -71,11 +71,11 @@ height = 14.0
 
 [node name="beaver" type="CharacterBody2D" unique_id=1802146167]
 
-[node name="beaver_sprite2" type="AnimatedSprite2D" parent="." unique_id=2145676210]
+[node name="beaver_sprite" type="AnimatedSprite2D" parent="." unique_id=2145676210]
 position = Vector2(-8, -5)
 sprite_frames = SubResource("SpriteFrames_u14ej")
 animation = &"bite"
 
-[node name="beaver_sprite" type="CollisionShape2D" parent="." unique_id=1100473291]
+[node name="beaver_collision" type="CollisionShape2D" parent="." unique_id=1100473291]
 position = Vector2(0, -4)
 shape = SubResource("CapsuleShape2D_uqtu4")
