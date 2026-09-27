@@ -5,8 +5,8 @@ const MINERAL_TEXTURE = preload("res://assets/terrain/ores.png")
 const MINERAL_TYPES: Array[StringName] = [&"iron", &"potassium", &"water"]
 const MINERAL_SIZE := Vector2(16, 16)
 
-@export var spawn_count := 8
-@export var spawn_area := Rect2(-144, 16, 288, 88)
+@export var spawn_count := 50
+@export var spawn_area := Rect2(-144, 16, 288, 500)
 @export var spawn_spacing := Vector2i(24, 24)
 
 var mineral_counts := {
@@ -99,10 +99,11 @@ func _on_mineral_area_entered(root: Area2D, mineral: Area2D) -> void:
 	var tree := get_node_or_null("../Tree")
 	if tree != null:
 		match mineral_type:
-			&"iron":
-				tree.iron += 1
 			&"potassium":
+				tree.iron += 1
+			&"iron":
 				tree.potassium += 1
 			&"water":
 				tree.water += 1
+	await get_tree().create_timer(1.0).timeout
 	mineral.queue_free()
