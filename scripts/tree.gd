@@ -7,9 +7,9 @@ const GROWTH_POTASSIUM_COST := 1
 
 var health = 100
 var Stage = 1
-var iron = 0
-var water = 0
-var potassium = 0
+var iron = 10
+var water = 10
+var potassium = 10
 
 
 func _ready() -> void:

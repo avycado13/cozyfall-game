@@ -29,6 +29,7 @@ func _process(_delta: float) -> void:
 	iron = tree.iron
 	water = tree.water
 	potassium = tree.potassium
+	
 	$VBoxContainer/Iron/Label.text = str("Iron: ",iron)
 	$VBoxContainer/Water/Label.text = str("Water: ",water)
 	$VBoxContainer/Potassium/Label.text = str("Potassium: ",potassium)

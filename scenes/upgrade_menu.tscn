@@ -3,11 +3,103 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://cyi7q8bcigdam" path="res://scenes/wood_button.tscn" id="1_e3qxy"]
+[ext_resource type="Script" uid="uid://nu8jj8c7dui3" path="res://scripts/upgrade_menu.gd" id="1_ksfom"]
+[ext_resource type="Texture2D" uid="uid://dh6aii5uh7qey" path="res://assets/UI/iron.png" id="3_0e30j"]
+[ext_resource type="Texture2D" uid="uid://dc6yqwawb05pi" path="res://assets/UI/water.png" id="4_ixicc"]
+[ext_resource type="Texture2D" uid="uid://jihpeg4y8r4w" path="res://assets/UI/potasium.png" id="5_chbti"]
+[ext_resource type="Texture2D" uid="uid://u8daeyudonaf" path="res://assets/UI/tree.png" id="6_ethjp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0isde"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_he6dt"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rs5v"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8ffg"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eg5u"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1026"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2218r"]
+atlas = ExtResource("6_ethjp")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ydl78"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0isde")
+}],
+"loop": 1,
+"name": &"stage1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_he6dt")
+}],
+"loop": 1,
+"name": &"stage2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rs5v")
+}],
+"loop": 1,
+"name": &"stage3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h8ffg")
+}],
+"loop": 1,
+"name": &"stage4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eg5u")
+}],
+"loop": 1,
+"name": &"stage5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1026")
+}],
+"loop": 1,
+"name": &"stage6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2218r")
+}],
+"loop": 1,
+"name": &"stage7",
+"speed": 5.0
+}]
 
 [node name="upgrade_menu" type="CanvasLayer" unique_id=1244491663]
+script = ExtResource("1_ksfom")
 
 [node name="WoodButton" parent="." unique_id=912590772 instance=ExtResource("1_e3qxy")]
-<<<<<<< HEAD
 offset_left = 326.0
 offset_top = 496.0
 offset_right = 826.0
@@ -97,10 +189,3 @@ text = "Grow Tree"
 >>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
 =======
 >>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
-=======
-offset_left = 350.0
-offset_top = 512.0
-offset_right = 775.0
-offset_bottom = 632.0
-text = "Grow Tree 3:    2:    1:   "
->>>>>>> parent of 35c8075 (made upgrade menu)
