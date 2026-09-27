@@ -34,6 +34,15 @@ func _process(delta: float) -> void:
 		instance.rotation -= deg_to_rad(30)
 		
 	
+func reset_roots() -> void:
+	for stick in get_children():
+		remove_child(stick)
+		stick.queue_free()
+	current_pos = Vector2.ZERO
+	stick_joint_pos = Vector2.ZERO
+	init_stick()
+
+
 func init_stick():
 	instance = branch.instantiate()
 	instance.rotation = deg_to_rad(15)

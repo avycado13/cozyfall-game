@@ -8,13 +8,26 @@
 [ext_resource type="PackedScene" uid="uid://d3sdcqk2k3yvw" path="res://scenes/pause_screen.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://b116uq0vrrjg" path="res://scenes/tree.tscn" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://gcmvir6nn7bg" path="res://scenes/minerals.tscn" id="6_minerals"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="7_main"]
+[ext_resource type="PackedScene" uid="uid://c8hxickr8x1a4" path="res://scenes/upgrade_menu.tscn" id="8_upgrade"]
 
 [node name="root" type="Node2D" unique_id=1779071880]
+script = ExtResource("7_main")
 
 [node name="UI" parent="." unique_id=1658365500 instance=ExtResource("1_tefeu")]
 layer = 90
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 [node name="upgrade_menu" parent="." unique_id=1244491663 instance=ExtResource("2_tipki")]
+=======
+[node name="UpgradeMenu" parent="." instance=ExtResource("8_upgrade")]
+layer = 91
+>>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
+=======
+[node name="UpgradeMenu" parent="." instance=ExtResource("8_upgrade")]
+layer = 91
+>>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
 
 [node name="PauseScreen" parent="." unique_id=1946667866 instance=ExtResource("4_jyhfs")]
 layer = 100
