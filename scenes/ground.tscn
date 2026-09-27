@@ -17,7 +17,6 @@ z_index = -2
 texture = ExtResource("3_vjnaj")
 
 [node name="Darkness" type="Sprite2D" parent="." unique_id=844759301]
-visible = false
 z_index = 4
 texture = ExtResource("4_hokwi")
 
@@ -36,7 +35,6 @@ position = Vector2(0, 325)
 texture = ExtResource("3_vjnaj")
 
 [node name="Darkness2" type="Sprite2D" parent="." unique_id=498064511]
-visible = false
 z_index = 4
 position = Vector2(0, 144)
 scale = Vector2(1, 2.6399999)
