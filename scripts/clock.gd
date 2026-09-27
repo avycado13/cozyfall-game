@@ -1,27 +1,29 @@
 extends Node2D
 
-signal day_passed
-
-const SECONDS_PER_HOUR := 15.0
-
 var hour = 9
 var minute = 0
-
+var speed = 1
+# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Timer.wait_time = SECONDS_PER_HOUR / 60.0
 	$Timer.timeout.connect(_on_timer_timeout)
 	$minute.rotation_degrees = -90
 	$hour.rotation_degrees = 180
+	
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	$Timer.wait_time = .25/speed
+	if minute == 60 or minute > 60:
+		minute = 0
+		hour +=1
+	
 
+	
 func _on_timer_timeout() -> void:
-	minute += 1
-	$minute.rotation_degrees += 6
-	$hour.rotation_degrees += 0.5
-	while minute >= 60:
-		minute -= 60
-		hour += 1
-		# The clock starts at 9; a new day begins when it returns to 9.
-		if hour >= 33:
-			hour = 9
-			day_passed.emit()
+	minute += (1/speed)
+	$minute.rotation_degrees += (6/speed)
+	$hour.rotation_degrees += (.5/speed)
+	#30 secs for 1 hour
+	#.5 secs for 1 min
+	#6 degress per min
+	

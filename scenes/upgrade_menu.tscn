@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://c8hxickr8x1a4"]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://cyi7q8bcigdam" path="res://scenes/wood_button.tscn" id="1_e3qxy"]
 [ext_resource type="Script" uid="uid://nu8jj8c7dui3" path="res://scripts/upgrade_menu.gd" id="1_ksfom"]
 [ext_resource type="Texture2D" uid="uid://dh6aii5uh7qey" path="res://assets/UI/iron.png" id="3_0e30j"]
@@ -139,53 +137,3 @@ position = Vector2(580, 275)
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_ydl78")
 animation = &"stage1"
-=======
-[ext_resource type="Script" path="res://scripts/upgrade_menu.gd" id="1_menu"]
-[ext_resource type="PackedScene" uid="uid://cyi7q8bcigdam" path="res://scenes/wood_button.tscn" id="2_button"]
-
-[node name="UpgradeMenu" type="CanvasLayer"]
-script = ExtResource("1_menu")
-
-=======
-[ext_resource type="Script" path="res://scripts/upgrade_menu.gd" id="1_menu"]
-[ext_resource type="PackedScene" uid="uid://cyi7q8bcigdam" path="res://scenes/wood_button.tscn" id="2_button"]
-
-[node name="UpgradeMenu" type="CanvasLayer"]
-script = ExtResource("1_menu")
-
->>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
-[node name="Panel" type="PanelContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -260.0
-offset_top = -205.0
-offset_right = 260.0
-offset_bottom = -12.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="Contents" type="VBoxContainer" parent="Panel"]
-layout_mode = 2
-alignment = 1
-
-[node name="Stage" type="Label" parent="Panel/Contents"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 22
-text = "Tree Stage 1 / 7"
-horizontal_alignment = 1
-
-[node name="Cost" type="Label" parent="Panel/Contents"]
-layout_mode = 2
-text = "Cost: 3 iron  /  2 water  /  1 potassium"
-horizontal_alignment = 1
-
-[node name="WoodButton" parent="Panel/Contents" instance=ExtResource("2_button")]
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-text = "Grow Tree"
-<<<<<<< HEAD
->>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
-=======
->>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0

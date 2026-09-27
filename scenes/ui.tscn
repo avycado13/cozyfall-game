@@ -15,68 +15,6 @@ z_index = 10
 position = Vector2(1072, 80)
 scale = Vector2(4, 4)
 
-[node name="DatePanel" type="PanelContainer" parent="."]
-offset_left = 16.0
-offset_top = 16.0
-offset_right = 420.0
-offset_bottom = 82.0
-
-[node name="Details" type="VBoxContainer" parent="DatePanel"]
-layout_mode = 2
-
-[node name="Date" type="Label" parent="DatePanel/Details"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 22
-text = "Fall  Nov 1, Year 1"
-
-[node name="WinterGoal" type="Label" parent="DatePanel/Details"]
-layout_mode = 2
-text = "By Dec 1: 10 each of iron, water, potassium"
-
-[node name="DeathScreen" type="Control" parent="."]
-visible = false
-process_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="Backdrop" type="ColorRect" parent="DeathScreen"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color(0.08, 0.06, 0.1, 0.85)
-
-[node name="Message" type="VBoxContainer" parent="DeathScreen"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -250.0
-offset_top = -55.0
-offset_right = 250.0
-offset_bottom = 55.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="Title" type="Label" parent="DeathScreen/Message"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "Winter came. Your tree died."
-horizontal_alignment = 1
-
-[node name="Reason" type="Label" parent="DeathScreen/Message"]
-layout_mode = 2
-text = "You need 10 each of iron, water, and potassium."
-horizontal_alignment = 1
-
-[node name="Restart" type="Button" parent="DeathScreen/Message"]
-layout_mode = 2
-text = "Try Again"
-
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1121422520]
 anchors_preset = 2
 anchor_top = 1.0
