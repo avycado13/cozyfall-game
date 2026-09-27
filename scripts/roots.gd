@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 	#else:
 		#stick_joint_pos = current_pos
 	##print(rad_to_deg(instance.rotation ))
-	
+	print(current_pos)
 	if Input.is_action_just_pressed("ui_accept"):
 		current_pos -= Vector2(sin(instance.rotation),-cos(instance.rotation)) * 16
 		instance.modulate.a = 1
@@ -39,4 +39,10 @@ func init_stick():
 	instance.rotation = deg_to_rad(15)
 	instance.modulate.a = 0.5
 	add_child(instance)
+	instance.global_position = current_pos
+	
+func update_stick():
+	
+	instance.rotation = deg_to_rad(15)
+	instance.modulate.a = 0.5
 	instance.global_position = current_pos

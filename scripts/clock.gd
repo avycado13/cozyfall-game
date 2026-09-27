@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	if minute == 60 or minute > 60:
 		minute = 0
 		hour +=1
-	print(hour,":",minute)
+	
 
 	
 func _on_timer_timeout() -> void:

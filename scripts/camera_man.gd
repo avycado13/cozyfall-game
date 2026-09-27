@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-var max_speed = 500
-var acceleration = 500
+var max_speed = 1000
+var acceleration = 1000
 
 @onready var Camera = $Camera
 func _process(delta: float) -> void:
