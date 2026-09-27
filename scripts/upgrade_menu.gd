@@ -58,9 +58,9 @@ func _process(delta: float) -> void:
 		self.visible = !self.visible
 		
 	#get_tree().paused = self.visible 
-=======
-=======
->>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
+#=======
+#=======
+#>>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
 
 @onready var tree = get_node("../Tree")
 @onready var grow_button: Button = $Panel/Contents/WoodButton

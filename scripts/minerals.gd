@@ -7,6 +7,7 @@ const MINERAL_SIZE := Vector2(16, 16)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @export var spawn_count := 50
 @export var spawn_area := Rect2(-144, 16, 288, 500)
 =======
@@ -15,6 +16,10 @@ const MINERAL_SIZE := Vector2(16, 16)
 @export var spawn_count := 16
 @export var spawn_area := Rect2(-144, 16, 288, 88)
 >>>>>>> e9889bcece48cd5e5b261c9d2511016e04445dc0
+=======
+@export var spawn_count := 8
+@export var spawn_area := Rect2(-144, 16, 288, 88)
+>>>>>>> parent of 35c8075 (made upgrade menu)
 @export var spawn_spacing := Vector2i(24, 24)
 @export var depth_per_day := 24.0
 
@@ -120,11 +125,10 @@ func _on_mineral_area_entered(root: Area2D, mineral: Area2D) -> void:
 	var tree := get_node_or_null("../Tree")
 	if tree != null:
 		match mineral_type:
-			&"potassium":
-				tree.iron += 1
 			&"iron":
+				tree.iron += 1
+			&"potassium":
 				tree.potassium += 1
 			&"water":
 				tree.water += 1
-	await get_tree().create_timer(1.0).timeout
 	mineral.queue_free()
